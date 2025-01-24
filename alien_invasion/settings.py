@@ -17,6 +17,7 @@ class Settings:
         self.bullet_height = 15
         self.bullet_color = (22.4, 100, 7.8)
         self.bullets_allowed = 10
+        # za każde zabicie += 1 pocisk
 
         #ustawienia dotyczace obcego
         self.alien_speed = 1.0
