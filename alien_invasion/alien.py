@@ -11,7 +11,7 @@ class Alien(Sprite):
         self.settings = ai_game.settings
 
         #wczytanie obrazu obcego i zdefiniowanie jego atrybutu rect
-        self.image = pygame.image.load('images/eye.bmp')
+        self.image = pygame.image.load(get_random_alien_image())
         self.rect = self.image.get_rect()
 
         # umieszczenie nowego obcego w poblizu lewego gornego rogu ekranu.
