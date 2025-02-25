@@ -7,15 +7,15 @@ from alien import Alien
 import os
 import random
 
-# Folder z obrazami obcych
-alien_images_folder = 'images/aliens'
+# # Folder z obrazami obcych
+# alien_images_folder = 'images/aliens'
 
-# Lista plików z obrazami
-alien_images = [os.path.join(alien_images_folder, f) for f in os.listdir(alien_images_folder) if f.endswith('.bmp')]
+# # Lista plików z obrazami
+# alien_images = [os.path.join(alien_images_folder, f) for f in os.listdir(alien_images_folder) if f.endswith('.bmp')]
 
-# Funkcja do losowego wyboru obrazu obcego
-def get_random_alien_image():
-    return random.choice(alien_images)
+# # Funkcja do losowego wyboru obrazu obcego
+# def get_random_alien_image():
+#     return random.choice(alien_images)
 
 class AlienInvasion:
     """Ogólna klasa przeznaczona do zarzadzania zasobami i sposobem działania gry."""
@@ -151,7 +151,8 @@ class AlienInvasion:
 
     def _create_alien(self, x_position, y_position):
         """utworzenie obcego i umieszczenie go w rzędzie."""
-        new_alien = Alien(self)
+        images_path = random.choice(self.settings.alien_images)
+        new_alien = Alien(self, images_path)
         new_alien.x = x_position
         new_alien.rect.x = x_position
         new_alien.rect.y = y_position
