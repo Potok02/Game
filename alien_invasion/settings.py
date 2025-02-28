@@ -24,4 +24,6 @@ class Settings:
         self.fleet_drop_speed = 10
         # wartosc fleet_direction wynoszaca 1 oznacza w prawo, a -1 w lewo.
         self.fleet_direction = 1
-        self.aliens_images = ['images/aliens/ballon.bmp', 'images/aliens/bat.bmp']
+        self.aliens_images = ['images/aliens/ballon.bmp', 'images/aliens/bat.bmp', 'images/aliens/bee.bmp', 
+        'images/aliens/cow.bmp', 'images/aliens/eye.bmp' 'images/aliens/ghost.bmp', 'images/aliens/snake.bmp',
+        'images/aliens/worm.bmp']
