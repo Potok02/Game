@@ -7,11 +7,11 @@ from alien import Alien
 import os
 import random
 
-# Folder z obrazami obcych
-alien_images_folder = 'images/aliens'
+# # Folder z obrazami obcych
+# alien_images_folder = 'images/aliens'
 
-# Lista plików z obrazami
-alien_images = [os.path.join(alien_images_folder, f) for f in os.listdir(alien_images_folder) if f.endswith('.bmp')]
+# # Lista plików z obrazami
+# alien_images = [os.path.join(alien_images_folder, f) for f in os.listdir(alien_images_folder) if f.endswith('.bmp')]
 
 # Funkcja do losowego wyboru obrazu obcego
 def get_random_alien_image():
